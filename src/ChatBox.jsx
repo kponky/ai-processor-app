@@ -14,12 +14,11 @@ function ChatBox({
   setSelectedLanguage,
   isLoading,
 }) {
-  // ... existing code ...
 
   return (
     <button
-      onClick={() => onTranslate(message.id)}
-      disabled={selectedLanguage === message.language}
+      onClick={() => onTranslate(messages.id)}
+      disabled={selectedLanguage === messages.language}
       className="translate-button"
     >
       Translate

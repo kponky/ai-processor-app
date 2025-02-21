@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { IoSunnyOutline } from "react-icons/io5";
 import { IoMoonOutline } from "react-icons/io5";
-import "./styles.css"; // Import the CSS file
+import "../Styles/Header.css";
 
 function Header({ darkMode, setDarkMode }) {
   function handleMode() {
@@ -11,7 +11,7 @@ function Header({ darkMode, setDarkMode }) {
   return (
     <div className={`header ${darkMode ? "dark" : ""}`}>
       <nav className="nav">
-        <h2>ChatHNG</h2>
+        <h2>Language AI</h2>
         <div className="mode-toggle" onClick={handleMode}>
           <span>{darkMode ? <IoSunnyOutline /> : <IoMoonOutline />}</span>
         </div>

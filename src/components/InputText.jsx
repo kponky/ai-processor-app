@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { IoSendOutline } from "react-icons/io5";
-import "./styles.css"; // Import the CSS file
+import "../Styles/InputText.css"; // Import the CSS file
 
 function InputText({
   inputText,
@@ -9,6 +9,7 @@ function InputText({
   isLoading,
   error,
 }) {
+  
   const handleKeyPress = (e) => {
     if (e.key === "Enter" && !e.shiftKey && !isLoading) {
       e.preventDefault();

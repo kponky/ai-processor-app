@@ -2,7 +2,14 @@ import { useState, useEffect } from "react";
 // import ChatBox from "./components/ChatBox";
 // import Header from "./components/Header";
 // import InputText from "./components/InputText";
-// import "./styles.css";
+import "../src/Styles/ChatBox.css";
+import "../src/Styles/ChatBoxComponent.css";
+import "../src/Styles/Header.css";
+import "../src/Styles/InputText.css";
+import "../src/styles.css";
+import ChatBoxComp from "./components/ChatBoxComp";
+import InputText from "./components/InputText";
+import Header from "./components/Header";
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -192,7 +199,7 @@ function App() {
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <main className="main-content">
         <div className="chat-container">
-          <ChatBox
+          <ChatBoxComp
             messages={messages}
             inputText={inputText}
             setInputText={setInputText}

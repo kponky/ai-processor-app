@@ -4,13 +4,13 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 4rem; /* h-16 */
+  height: 5rem; /* h-16 */
   z-index: 10;
-  background-color: #ffffff; /* bg-light-backgroundLight */
+  background-color: #3b82f6;; 
+  color: #1f2937; /* text-gray-900 */
 }
-
 .dark .header {
-  background-color: #1f2937; /* dark:bg-dark-backgroundDark */
+  background-color: #1f2937; ;
 }
 
 .nav {
@@ -31,18 +31,20 @@
 }
 
 .mode-toggle {
-  padding: 0.75rem; /* p-3 */
-  border-radius: 9999px; /* rounded-full */
+  padding: 10px 10px; /* p-3 */
+  border-radius: 50%; /* rounded-full */
   cursor: pointer;
   transition: background-color 0.2s;
+  display: flex;
+  align-items: center;justify-content: center;
 }
 
 .mode-toggle:hover {
-  background-color: #e5e7eb; /* hover:bg-gray-200 */
+  background-color: rgba(99, 99, 155, 0.303) /* hover:bg-gray-200 */
 }
 
 .dark .mode-toggle:hover {
-  background-color: #374151; /* hover:dark:bg-outlineDark */
+  background-color: #2a67caab; 
 }
 
 .mode-toggle span {

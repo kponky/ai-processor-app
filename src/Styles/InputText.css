@@ -7,7 +7,8 @@
   border-top: 1px solid #e5e7eb; /* border-t */
   padding: 1rem; /* p-4 */
   z-index: 10;
-  background-color: #ffffff; /* bg-light-backgroundLight */
+  margin: auto ;
+
 }
 
 .dark .input-container {
@@ -18,16 +19,18 @@
   max-width: 48rem; /* max-w-3xl */
   margin: 0 auto;
   display: flex;
-  gap: 1rem; /* gap-4 */
+  gap: 1rem; 
+  width: 100%;
 }
 
 .input-wrapper input {
   flex: 1;
-  padding: 0.5rem 1rem; /* px-4 py-2 */
+  padding: 1rem 1rem; /* px-4 py-2 */
   border-radius: 0.5rem; /* rounded-lg */
   border: 1px solid #d1d5db; /* border-gray-300 */
-  background-color: #ffffff; /* bg-white */
-  color: #111827; /* text-gray-900 */
+  background-color: transparent;
+  width: 100% ;
+  color: #111827; 
   outline: none;
 }
 
