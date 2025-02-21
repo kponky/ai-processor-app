@@ -1,0 +1,55 @@
+/* styles.css */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4rem; /* h-16 */
+  z-index: 10;
+  background-color: #ffffff; /* bg-light-backgroundLight */
+}
+
+.dark .header {
+  background-color: #1f2937; /* dark:bg-dark-backgroundDark */
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem; /* px-6 py-2 */
+}
+
+.header h2 {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: bold;
+  color: #1f2937; /* text-gray-900 */
+}
+
+.dark .header h2 {
+  color: #d1d5db; /* dark:text-stone-300 */
+}
+
+.mode-toggle {
+  padding: 0.75rem; /* p-3 */
+  border-radius: 9999px; /* rounded-full */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.mode-toggle:hover {
+  background-color: #e5e7eb; /* hover:bg-gray-200 */
+}
+
+.dark .mode-toggle:hover {
+  background-color: #374151; /* hover:dark:bg-outlineDark */
+}
+
+.mode-toggle span {
+  font-size: 1.5rem; /* text-2xl */
+  color: #1f2937; /* text-gray-900 */
+}
+
+.dark .mode-toggle span {
+  color: #f3f4f6; /* dark:text-stone-100 */
+}

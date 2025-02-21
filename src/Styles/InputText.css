@@ -1,0 +1,95 @@
+/* styles.css */
+.input-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #e5e7eb; /* border-t */
+  padding: 1rem; /* p-4 */
+  z-index: 10;
+  background-color: #ffffff; /* bg-light-backgroundLight */
+}
+
+.dark .input-container {
+  background-color: #1f2937; /* dark:bg-dark-backgroundDark */
+}
+
+.input-wrapper {
+  max-width: 48rem; /* max-w-3xl */
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem; /* gap-4 */
+}
+
+.input-wrapper input {
+  flex: 1;
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  border-radius: 0.5rem; /* rounded-lg */
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  background-color: #ffffff; /* bg-white */
+  color: #111827; /* text-gray-900 */
+  outline: none;
+}
+
+.dark .input-wrapper input {
+  border-color: #4b5563; /* dark:border-gray-600 */
+  background-color: #374151; /* dark:bg-gray-700 */
+  color: #f3f4f6; /* dark:text-white */
+}
+
+.input-wrapper input:focus {
+  border-color: #3b82f6; /* focus:ring-blue-500 */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* focus:ring-2 */
+}
+
+.input-wrapper input:disabled {
+  opacity: 0.5; /* disabled:opacity-50 */
+  cursor: not-allowed; /* disabled:cursor-not-allowed */
+}
+
+.input-wrapper button {
+  padding: 0.5rem 1.5rem; /* px-6 py-2 */
+  background-color: #3b82f6; /* bg-blue-500 */
+  color: #ffffff; /* text-white */
+  border-radius: 0.5rem; /* rounded-lg */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* gap-2 */
+}
+
+.input-wrapper button:hover {
+  background-color: #2563eb; /* hover:bg-blue-600 */
+}
+
+.input-wrapper button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* focus:ring-2 */
+}
+
+.input-wrapper button:disabled {
+  opacity: 0.5; /* disabled:opacity-50 */
+  cursor: not-allowed; /* disabled:cursor-not-allowed */
+}
+
+.error-message {
+  color: #ef4444; /* text-red-500 */
+  font-size: 0.875rem; /* text-sm */
+  margin-top: 0.5rem; /* mt-2 */
+  text-align: center;
+}
+
+.loading-spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

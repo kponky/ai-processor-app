@@ -1,0 +1,29 @@
+.translate-button {
+  font-size: 0.875rem; /* text-sm */
+  color: #3b82f6; /* text-blue-500 */
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.translate-button:hover {
+  color: #2563eb; /* hover:text-blue-600 */
+}
+
+.translate-button:disabled {
+  opacity: 0.5; /* disabled:opacity-50 */
+  cursor: not-allowed; /* disabled:cursor-not-allowed */
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .translate-button {
+    color: #60a5fa; /* dark:text-blue-400 */
+  }
+
+  .translate-button:hover {
+    color: #93c5fd; /* dark:hover:text-blue-300 */
+  }
+}
